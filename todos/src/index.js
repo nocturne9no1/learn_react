@@ -1,16 +1,21 @@
-// import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TodoList from './components/todoList.js'
 
+function InputBox() {
+  return (
+    <input type="text" />
+  )
+};
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  <TodoList/>,
+  <React.StrictMode>
+    {/* <InputBox/>, */}
+    <TodoList/>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
